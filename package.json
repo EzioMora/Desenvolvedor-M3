@@ -1,0 +1,24 @@
+{
+  "name": "desenvolvedor-m3",
+  "version": "1.0.0",
+  "description": "test-front-end",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzioMora/Desenvolvedor-M3.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ezio Mora",
+    "email": "eziomorabusiness@gmail.com",
+    "url": "https://br.linkedin.com/in/ezio-enrique-mora-nieves-a64939124"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EzioMora/Desenvolvedor-M3/issues"
+  },
+  "homepage": "https://github.com/EzioMora/Desenvolvedor-M3#readme"
+}
