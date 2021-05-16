@@ -1,2 +1,9 @@
-# dependencies
+# ignore node dependency directories
 /node_modules
+
+# ignore public directory
+
+/public
+
+# ignore layout directory
+/layout
