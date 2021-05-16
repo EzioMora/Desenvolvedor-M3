@@ -7,3 +7,7 @@
 
 # ignore layout directory
 /layout
+
+# ignore .vscode directoy
+
+/.vscode
