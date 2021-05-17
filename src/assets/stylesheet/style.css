@@ -4,6 +4,7 @@
 
   1) reset
   2) header
+  3) grid area category page desktop
 
 */
 
@@ -71,4 +72,28 @@ ul {
   background-color: #00c0ee;
   border-radius: 9px;
   pointer-events: none;
+}
+
+/* grid area category page desktop */
+.category-page__wrapper {
+  display: grid;
+  grid-template-areas:
+    "title sort sort"
+    "filter vitrine vitrine";
+}
+
+.category-page__title {
+  grid-area: title;
+}
+
+.filter {
+  grid-area: filter;
+}
+
+.sort {
+  grid-area: sort;
+}
+
+.vitrine {
+  grid-area: vitrine;
 }

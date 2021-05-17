@@ -1,4 +1,5 @@
 @media (max-width: 640px) {
+  /* header */
   .header__img-logo {
     width: 183px;
     height: 48px;
@@ -29,5 +30,13 @@
     color: #ffffff;
     border-radius: 16px;
     pointer-events: none;
+  }
+
+  /* grid area category page mobile */
+  .category-page__wrapper {
+    grid-template-areas:
+      "title title"
+      "filter sort"
+      "vitrine vitrine";
   }
 }
