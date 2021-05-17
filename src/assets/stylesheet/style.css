@@ -3,6 +3,7 @@
   Style Guide
 
   1) reset
+  2) header
 
 */
 
@@ -26,4 +27,48 @@ img {
 
 ul {
   list-style: none;
+}
+
+/* header */
+.header {
+  border-bottom: 2px solid #c7c7c7;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 918px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.header__bag {
+  position: relative;
+}
+
+.header__img-bag {
+  width: 17px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.header__amout-bag.added-item-in-bag {
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  color: #ffffff;
+  background-color: #00c0ee;
+  border-radius: 9px;
+  pointer-events: none;
 }

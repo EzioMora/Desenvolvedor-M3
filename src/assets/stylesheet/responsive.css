@@ -1,0 +1,33 @@
+@media (max-width: 640px) {
+  .header__img-logo {
+    width: 183px;
+    height: 48px;
+  }
+
+  .header__img-bag {
+    width: 31px;
+    height: 36px;
+  }
+
+  .header__bag {
+    margin-right: 24px;
+  }
+
+  .header__amout-bag.added-item-in-bag {
+    position: absolute;
+    top: 12px;
+    right: -26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 16px;
+    pointer-events: none;
+  }
+}
