@@ -1,0 +1,229 @@
+{
+  "blusas" : [
+  {
+    "id": 1,
+    "productName": "camiseta mescla",
+    "productUrl": "https://i.ibb.co/fMJ0hxN/img-2.png",
+    "productColor": ["Cinza"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 28,
+    "productInstallments": 3
+  },
+  {
+    "id": 2,
+    "productName": "saia em couro",
+    "productUrl": "https://i.ibb.co/LJxRNwj/img-3.png",
+    "productColor": ["Preto"],
+    "productSize": [36, 38, 42, 46],
+    "productPrice": 398,
+    "productInstallments": 5
+  },
+  {
+    "id": 3,
+    "productName": "cardigan tigre",
+    "productUrl": "https://i.ibb.co/K94Hm0M/img-4.png",
+    "productColor": ["Laranja"],
+    "productSize": ["G", "GG"],
+    "productPrice": 398,
+    "productInstallments": 5
+  },
+  {
+    "id": 4,
+    "productName": "cardigan off white",
+    "productUrl": "https://i.ibb.co/CWLdgF2/img-5.png",
+    "productColor": ["Branco"],
+    "productSize": ["P", "M"],
+    "productPrice": 99.90,
+    "productInstallments": 3
+  },
+  {
+    "id": 5,
+    "productName": "body leopardo",
+    "productUrl": "https://i.ibb.co/k8c73W8/img-6.png",
+    "productColor": ["Castanho"],
+    "productSize": [36, 38, 42, 48],
+    "productPrice": 129.90,
+    "productInstallments": 3
+  },
+  {
+    "id": 6,
+    "productName": "casaco pelos",
+    "productUrl": "https://i.ibb.co/LhSmk1p/img-7.png",
+    "productColor": ["Rosa"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 398,
+    "productInstallments": 5
+  },
+  {
+    "id": 7,
+    "productName": "cropped stripes",
+    "productUrl": "https://i.ibb.co/fYVvyDx/img-8.png",
+    "productColor": ["Azul", "Amarelo", "Laranja", "Verde"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 120,
+    "productInstallments": 3
+  },
+  {
+    "id": 8,
+    "productName": "camisa transparente",
+    "productUrl": "https://i.ibb.co/MVTp7Q8/img-9.png",
+    "productColor": ["Preto"],
+    "productSize": ["P", "M"],
+    "productPrice": 398,
+    "productInstallments": 5
+  },
+  {
+    "id": 9,
+    "productName": "pochete clutch",
+    "productUrl": "https://i.ibb.co/Gsbq9y0/img-10.png",
+    "productColor": ["Castanho"],
+    "productSize": ["U"],
+    "productPrice": 51,
+    "productInstallments": 3
+  },
+  {
+    "id": 10,
+    "productName": "camiseta mescla",
+    "productUrl": "https://i.ibb.co/fMJ0hxN/img-2.png",
+    "productColor": ["Cinza"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 49.99,
+    "productInstallments": 3
+  },
+  {
+    "id": 11,
+    "productName": "saia em couro",
+    "productUrl": "https://i.ibb.co/LJxRNwj/img-3.png",
+    "productColor": ["Preto"],
+    "productSize": [36, 38, 42, 46],
+    "productPrice": 500,
+    "productInstallments": 5
+  },
+  {
+    "id": 12,
+    "productName": "cardigan tigre",
+    "productUrl": "https://i.ibb.co/K94Hm0M/img-4.png",
+    "productColor": ["Laranja"],
+    "productSize": ["G", "GG"],
+    "productPrice": 520,
+    "productInstallments": 5
+  },
+  {
+    "id": 13,
+    "productName": "cardigan off white",
+    "productUrl": "https://i.ibb.co/CWLdgF2/img-5.png",
+    "productColor": ["Branco"],
+    "productSize": ["P", "M"],
+    "productPrice": 149.99,
+    "productInstallments": 3
+  },
+  {
+    "id": 14,
+    "productName": "body leopardo",
+    "productUrl": "https://i.ibb.co/k8c73W8/img-6.png",
+    "productColor": ["Castanho"],
+    "productSize": [36, 38, 42, 48],
+    "productPrice": 151,
+    "productInstallments": 3
+  },
+  {
+    "id": 15,
+    "productName": "casaco pelos",
+    "productUrl": "https://i.ibb.co/LhSmk1p/img-7.png",
+    "productColor": ["Rosa"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 600,
+    "productInstallments": 5
+  },
+  {
+    "id": 16,
+    "productName": "cropped stripes",
+    "productUrl": "https://i.ibb.co/fYVvyDx/img-8.png",
+    "productColor": ["Azul", "Amarelo", "Laranja", "Verde"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 280,
+    "productInstallments": 3
+  },
+  {
+    "id": 17,
+    "productName": "camisa transparente",
+    "productUrl": "https://i.ibb.co/MVTp7Q8/img-9.png",
+    "productColor": ["Preto"],
+    "productSize": ["P", "M"],
+    "productPrice": 398,
+    "productInstallments": 5
+  },
+  {
+    "id": 18,
+    "productName": "pochete clutch",
+    "productUrl": "https://i.ibb.co/Gsbq9y0/img-10.png",
+    "productColor": ["Castanho"],
+    "productSize": ["U"],
+    "productPrice": 50.99,
+    "productInstallments": 3
+  },
+  {
+    "id": 19,
+    "productName": "camiseta mescla",
+    "productUrl": "https://i.ibb.co/fMJ0hxN/img-2.png",
+    "productColor": ["Cinza"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 40,
+    "productInstallments": 3
+  },
+  {
+    "id": 20,
+    "productName": "saia em couro",
+    "productUrl": "https://i.ibb.co/LJxRNwj/img-3.png",
+    "productColor": ["Preto"],
+    "productSize": [36, 38, 42, 46],
+    "productPrice": 420,
+    "productInstallments": 5
+  },
+  {
+    "id": 21,
+    "productName": "cardigan tigre",
+    "productUrl": "https://i.ibb.co/K94Hm0M/img-4.png",
+    "productColor": ["Laranja"],
+    "productSize": ["G", "GG"],
+    "productPrice": 480,
+    "productInstallments": 5
+  },
+  {
+    "id": 22,
+    "productName": "cardigan off white",
+    "productUrl": "https://i.ibb.co/CWLdgF2/img-5.png",
+    "productColor": ["Branco"],
+    "productSize": ["P", "M"],
+    "productPrice": 130,
+    "productInstallments": 3
+  },
+  {
+    "id": 23,
+    "productName": "body leopardo",
+    "productUrl": "https://i.ibb.co/k8c73W8/img-6.png",
+    "productColor": ["Castanho"],
+    "productSize": [36, 38, 42, 48],
+    "productPrice": 159.99,
+    "productInstallments": 3
+  },
+  {
+    "id": 24,
+    "productName": "casaco pelos",
+    "productUrl": "https://i.ibb.co/LhSmk1p/img-7.png",
+    "productColor": ["Rosa"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 399.99,
+    "productInstallments": 5
+  },
+  {
+    "id": 25,
+    "productName": "cropped stripes",
+    "productUrl": "https://i.ibb.co/fYVvyDx/img-8.png",
+    "productColor": ["Azul", "Amarelo", "Laranja", "Verde"],
+    "productSize": ["P", "M", "G", "GG"],
+    "productPrice": 129.99,
+    "productInstallments": 3
+  }
+]
+}
