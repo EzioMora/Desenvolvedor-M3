@@ -4,8 +4,8 @@
   "description": "test-front-end",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=development webpack --mode none",
+    "start": "json-server --watch db.json",
+    "dev": "cross-env NODE_ENV=development webpack --mode none",
     "build": "cross-env NODE_ENV=production webpack --mode production"
   },
   "repository": {
