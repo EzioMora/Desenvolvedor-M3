@@ -5,16 +5,16 @@
     height: 48px;
   }
 
-  .header__img-bag {
+  .header__cart {
+    margin-right: 24px;
+  }
+
+  .header__img-cart {
     width: 31px;
     height: 36px;
   }
 
-  .header__bag {
-    margin-right: 24px;
-  }
-
-  .header__amout-bag.added-item-in-bag {
+  .header__cart-item-counter.added-item-in-cart {
     position: absolute;
     top: 12px;
     right: -26px;

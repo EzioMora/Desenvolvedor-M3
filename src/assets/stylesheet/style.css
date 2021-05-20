@@ -45,17 +45,17 @@ ul {
   padding: 16px 24px;
 }
 
-.header__bag {
+.header__cart {
   position: relative;
 }
 
-.header__img-bag {
+.header__img-cart {
   width: 17px;
   height: 20px;
   cursor: pointer;
 }
 
-.header__amout-bag.added-item-in-bag {
+.header__cart-item-counter.added-item-in-cart {
   position: absolute;
   top: 7px;
   right: -15px;
