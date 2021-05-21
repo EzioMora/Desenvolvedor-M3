@@ -43,6 +43,46 @@
 
   /* category page */
   .category-page__wrapper {
-    padding: 0 30px;
+    padding: 0 40px 0 30px;
+  }
+
+  /* card */
+  .vitrine__product-group {
+    grid-template-columns: repeat(auto-fit, 265px);
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+  }
+
+  .product-card__img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .product-card__info {
+    margin-bottom: 15px;
+  }
+
+  .product-card__title {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .product-card__price {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .product-card__installments {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .product-card__buy-btn {
+    width: 265px;
+    height: 57px;
+    font-size: 19px;
+    line-height: 24px;
   }
 }
