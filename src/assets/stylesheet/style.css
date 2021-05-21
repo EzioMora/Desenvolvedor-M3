@@ -8,6 +8,7 @@
   4) category page desktop
   5) card
   6) order
+  7) pagination
 
 */
 
@@ -249,4 +250,20 @@ ul {
 .dropdown-order__list-item.show-select-desktop:hover {
   background-color: #00c0ee;
   color: #ffffff;
+}
+
+/* pagination */
+
+.vitrine__btn-load-more {
+  display: block;
+  width: 159px;
+  height: 42px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  background-color: #00c0ee;
+  cursor: pointer;
+  margin: 0 auto;
 }

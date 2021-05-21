@@ -164,4 +164,12 @@
     margin-left: 44px;
     padding: 0;
   }
+
+  /* pagination */
+
+  .vitrine__btn-load-more {
+    width: 247px;
+    height: 65px;
+    font-size: 22px;
+  }
 }
