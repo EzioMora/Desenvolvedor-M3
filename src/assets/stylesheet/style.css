@@ -118,7 +118,7 @@ ul {
   grid-template-columns: repeat(auto-fit, 195px);
   grid-column-gap: 30px;
   grid-row-gap: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 64px;
 }
 
 .product-card__img {
