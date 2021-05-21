@@ -1,4 +1,3 @@
-// import { updateStore } from "../main.js";
 import { updateCategoryPage } from "../index.js";
 const selectOrderDOM = document.querySelector(".dropdown-order__select");
 const selectOrderListDOM = document.querySelector(".dropdown-order__list");
