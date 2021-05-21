@@ -5,6 +5,7 @@
   1) reset
   2) header
   3) grid area category page desktop
+  4) category page desktop
 
 */
 
@@ -77,6 +78,7 @@ ul {
 /* grid area category page desktop */
 .category-page__wrapper {
   display: grid;
+  grid-template-columns: 225px 1fr 1fr;
   grid-template-areas:
     "title sort sort"
     "filter vitrine vitrine";
@@ -96,4 +98,9 @@ ul {
 
 .vitrine {
   grid-area: vitrine;
+}
+
+.category-page__wrapper {
+  max-width: 870px;
+  margin: 0 auto;
 }

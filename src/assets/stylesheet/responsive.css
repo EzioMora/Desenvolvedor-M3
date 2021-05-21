@@ -34,9 +34,15 @@
 
   /* grid area category page mobile */
   .category-page__wrapper {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "title title"
       "filter sort"
       "vitrine vitrine";
+  }
+
+  /* category page */
+  .category-page__wrapper {
+    padding: 0 30px;
   }
 }
