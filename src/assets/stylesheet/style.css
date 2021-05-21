@@ -7,6 +7,7 @@
   3) grid area category page desktop
   4) category page desktop
   5) card
+  6) order
 
 */
 
@@ -35,6 +36,7 @@ ul {
 /* header */
 .header {
   border-bottom: 2px solid #c7c7c7;
+  margin-bottom: 40px;
 }
 
 .header__wrapper {
@@ -81,8 +83,9 @@ ul {
   display: grid;
   grid-template-columns: 225px 1fr 1fr;
   grid-template-areas:
-    "title sort sort"
+    "title order order"
     "filter vitrine vitrine";
+  grid-row-gap: 40px;
 }
 
 .category-page__title {
@@ -93,8 +96,8 @@ ul {
   grid-area: filter;
 }
 
-.sort {
-  grid-area: sort;
+.order {
+  grid-area: order;
 }
 
 .vitrine {
@@ -104,6 +107,7 @@ ul {
 .category-page__wrapper {
   max-width: 870px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 /* card desktop*/
@@ -167,4 +171,82 @@ ul {
   line-height: 18px;
   color: #ffffff;
   background-color: #000000;
+}
+
+/* order */
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.order__btn {
+  display: none;
+}
+
+.dropdown-order {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-order__select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 10px;
+  width: 125px;
+  background-color: #ffffff;
+  border: 1px solid #666666;
+}
+
+.dropdown-order__selected-title {
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.dropdown-order__arrow-down {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.dropdown-order__select-title-mobile {
+  display: none;
+}
+
+.dropdown-order__icon-x {
+  display: none;
+}
+
+.dropdown-order__list {
+  display: none;
+}
+
+.dropdown-order__list.show-select-desktop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #666666;
+}
+
+.dropdown-order__list-item {
+  font-size: 12px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans";
+  padding: 0 9px;
+}
+
+.dropdown-order__list-item.show-select-desktop:hover {
+  background-color: #00c0ee;
+  color: #ffffff;
 }
