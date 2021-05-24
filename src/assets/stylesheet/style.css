@@ -10,6 +10,7 @@
   6) order
   7) pagination
   8) filter
+  9) footer
 
 */
 
@@ -33,6 +34,15 @@ img {
 
 ul {
   list-style: none;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
 }
 
 /* header */
@@ -503,4 +513,31 @@ ul {
 /* btns bottom center */
 .filter__btns-bottom-center {
   display: none;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+}
+
+.footer__wrapper {
+  max-width: 902px;
+  height: 33px;
+  text-align: center;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+  margin-left: 120px;
 }
