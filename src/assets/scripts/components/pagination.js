@@ -1,7 +1,7 @@
 import { get } from "../services/HTTPRequests.js";
 import { url } from "../index.js";
-// import { stateFilter } from "./filter.js"; eliminar antes de fazer commit
 import { createCards } from "./card.js";
+import { stateFilter } from "./filter.js";
 import { stateOrder } from "./order.js";
 
 const btnLoadMoreDOM = document.querySelector(".vitrine__btn-load-more");
@@ -40,11 +40,10 @@ export function setStatePagination({
 }
 
 const loadMoreProducts = async () => {
-  // const { endpointFilter } = stateFilter; eliminar antes de fazer commit
+  const { endpointFilter } = stateFilter;
   const { endpointOrder } = stateOrder;
   const { endpointPagination } = statePagination;
-  // const endpoint = `${url}?${endpointFilter}${endpointPagination}`;
-  const endpoint = `${url}?${endpointOrder}&${endpointPagination}`;
+  const endpoint = `${url}?${endpointFilter}${endpointOrder}${endpointPagination}`;
   console.log(endpoint);
   const products = await get(endpoint);
   createCards(products);
