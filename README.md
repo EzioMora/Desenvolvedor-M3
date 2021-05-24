@@ -1,64 +1,46 @@
-# Venha ser um desenvolvedor da Digital M3
+# Teste Agência Digital M3
 
-Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio eletrônico, trabalhamos com implantação, migração, evolução e otmização de e-commerces. Estamos com a sede de desenvolvimento em Nova Friburgo RJ e um escritório comercial na cidade de São Paulo.
+## Requisitos
 
-Em Nova Friburgo estamos na: 
-> R. Helena Coutinho, 41 
-> Braunes, Nova Friburgo/RJ
-[https://goo.gl/maps/2mWagcctnrGdtFhBA]( https://goo.gl/maps/2mWagcctnrGdtFhBA )
+- Node `v12.x`
 
-Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos em HTML, CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
+## Iniciar
 
-## O que procuramos
+Instala as dependencias com Node
 
-### Requisitos Obrigatórios
+```
+npm install
+```
 
-- Html5, css3;
-- Javascript, jquery;
-- Versionamento Git;
-- Grunt/gulp;
-- Sass/less;
-- Sites responsivos;
-- Iniciativa, criatividade e colaboração;
-- Boas práticas: reutilização de código, semântica, organização, performance.
+Inicie o servidor json com
 
-### Desejáveis:
+```
+npm start
+```
 
-- Experiência com algum CMS
-- Conhecimento/Experiência em Vtex
-- React
+Agora abra seu navegador no seguinte endereço
 
-----
+[http://localhost:3000](http://localhost:3000)
 
-## Como se candidatar a vaga
+Caso apresente problemas para executar o codigo tente instalar o
+json-server de forma global
 
-- [Crie um fork desse projeto;](https://github.com/agenciam3/Desenvolvedor-M3/fork)
-- No seu fork, codifique o layout seguindo as instruções abaixo;
-- Atualize o readme com as instruções necessárias para rodar o seu código;
-- Adicione também seu e-mail de contato ao readme do projeto ( caso seu e-mail do github esteja privado )
-- Faça um pull request (ou envie para [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Vaga%20DEV%20-%20Digital%20M3)
+```
+npm install -g json-server
+```
 
+Apos a instalação intente novamente iniciar o servidor
 
-**obs.**: link do projeto [github.com/agenciam3/Desenvolvedor-M3](https://github.com/agenciam3/Desenvolvedor-M3)
+# Commits
 
-### Instruções para o teste
+Para commits foram utilizados os [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-O layout se encontra na pasta "layout" em PSD e PNG.
+# Branches
 
-### Obrigatório
+Para branches foi utilizado o fluxo de trabalho [Gitflow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
 
-- HTML5 e CSS3
-- Interação com JSON para renderizar os produtos (fique livre para criar o JSON no formato que achar mais adequado)
-- Interação com JSON para filtar os produtos
-- Funcionalidade: Filtrar produtos por cor, tamanho e preço.
-- Funcionalidade: Adicionar produto ao carrinho.
-- Funcionalidade: Carregar mais produtos.
-- Não utilizar Bootstrap, Foundation Css, Semantic ui ou semelhantes ;
-- Responsividade
+# Contatos
 
-#### Bônus
-
-- Javascript sem plugins e modular
-- Grunt, Gulp ou similar
-
-##### Dúvidas: [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Dúvida%20Vaga%20DEV%20-%20Digital%20M3)
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/fagnerpsantos)](https://github.com/EzioMora)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fagnerpsantos/)](https://www.linkedin.com/in/ezio-enrique-mora-nieves-a64939124/)
+Gmail: eziomorabusiness@gmail.com

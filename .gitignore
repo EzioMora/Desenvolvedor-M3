@@ -1,0 +1,9 @@
+# ignore node dependency directories
+/node_modules
+
+# ignore layout directory
+/layout
+
+# ignore .vscode directoy
+
+/.vscode
