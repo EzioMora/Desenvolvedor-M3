@@ -56,13 +56,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 918px;
+  max-width: 902px;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 16px;
 }
 
 .header__cart {
   position: relative;
+  margin-right: 19px;
 }
 
 .header__img-cart {
@@ -117,9 +118,17 @@ body {
 }
 
 .category-page__wrapper {
-  max-width: 870px;
+  max-width: 902px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding: 0 16px 73px 16px;
+}
+
+.category-page__title {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 400;
+  color: #333333;
+  transform: translateY(-10px);
 }
 
 /* card desktop*/
@@ -183,6 +192,7 @@ body {
   line-height: 18px;
   color: #ffffff;
   background-color: #000000;
+  cursor: pointer;
 }
 
 /* order */
