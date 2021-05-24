@@ -131,13 +131,23 @@ const orderPrices = (products) => {
 };
 
 const showAndHideCheckboxes = async () => {
-  const { filterPricesBy, endpointFilter } = stateFilter;
+  const { endpointFilter } = stateFilter;
   const newFilter = await get(`${url}?${endpointFilter}`);
   const colors = orderColors(newFilter);
   const sizes = orderSizes(newFilter);
   const prices = orderPrices(newFilter);
   const pricesPermanence = orderPrices(await get(endpointPricesHelper));
-  console.log("pricesPermanence", pricesPermanence);
+
+  const isDesktop = window.innerWidth > 640;
+
+  if (isDesktop) {
+    const handleShowColors = document.querySelector(
+      ".filter__handle-show-colors"
+    );
+    colors.length > 5
+      ? (handleShowColors.style.display = "flex")
+      : (handleShowColors.style.display = "none");
+  }
 
   const checkboxColor = document.querySelectorAll("[data-filter=color]");
   checkboxColor.forEach((checkbox) => {
@@ -179,7 +189,6 @@ const handleClick = async (event = "default") => {
   const checkbox = event != "default" ? event.target : "default";
   const filterType =
     checkbox != "default" ? checkbox.dataset.filter : "default";
-  console.log(checkbox);
 
   switch (filterType) {
     case "color":
@@ -205,13 +214,6 @@ const handleClick = async (event = "default") => {
   const isDesktop = window.innerWidth > 640;
 
   if (isDesktop) {
-    const handleShowColors = document.querySelector(
-      ".filter__handle-show-colors"
-    );
-    colors.length > 5
-      ? (handleShowColors.style.display = "flex")
-      : (handleShowColors.style.display = "none");
-
     setStateOrder({
       resetOrder: true,
     });
@@ -220,7 +222,6 @@ const handleClick = async (event = "default") => {
 };
 
 const renderFilter = ({ colors, sizes, prices }) => {
-  const { filterSizesBy, filterPricesBy } = stateFilter;
   const categoryColorDOM = document.querySelector(".filter__color");
   const divColorDOM = document.querySelector(".filter__color-group");
   const divSizeDOM = document.querySelector(".filter__size-group");
@@ -337,13 +338,6 @@ const renderFilter = ({ colors, sizes, prices }) => {
       arrowShowColors.classList.add("fa-angle-down");
     }
 
-    // showColors
-    //   ? document
-    //       .querySelector(".filter__color-group")
-    //       .classList.remove("filter__color-group--limit-sample")
-    //   : document
-    //       .querySelector(".filter__color-group")
-    //       .classList.add("filter__color-group--limit-sample");
     showColors = !showColors;
   });
 
@@ -395,9 +389,6 @@ const showBtnsBottomCenter = () => {
 let showColorFilter = true;
 const showColorFilterMobile = () => {
   if (showColorFilter) {
-    // document
-    //   .querySelector(".filter__color-group")
-    //   .classList.remove("filter__color-group--limit-sample");
     document
       .querySelector(".filter__color-group")
       .classList.add("show-color-filter-mobile");
@@ -405,9 +396,6 @@ const showColorFilterMobile = () => {
     document.querySelector(".filter__do-not-show-color-filter").style.display =
       "block";
   } else {
-    // document
-    //   .querySelector(".filter__color-group")
-    //   .classList.add("filter__color-group--limit-sample");
     document
       .querySelector(".filter__color-group")
       .classList.remove("show-color-filter-mobile");
@@ -520,7 +508,6 @@ const handleClickBtnsMobile = (event) => {
       showSizeFilterMobile();
       showPriceFilter = false;
       showPriceFilterMobile();
-      console.log("new", stateFilter);
       break;
     case "filter__btn-clean-filter":
       checkboxColor.forEach((checkbox) => {
