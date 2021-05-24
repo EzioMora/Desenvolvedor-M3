@@ -1,4 +1,29 @@
-@media (max-width: 640px) {
+@media (min-width: 641px) {
+  /* filter color */
+  .filter__color-item:hover .filter__color-checkbox-custom::after {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #00c0ee;
+  }
+
+  /* filter size */
+  .filter__size-item:hover .filter__size-checkbox-custom {
+    border: 1px solid #00c0ee;
+  }
+
+  /* filter price */
+  .filter__price-item:hover .filter__price-checkbox-custom::after {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #00c0ee;
+  }
+}
+
+@media screen and (max-width: 640px) {
   /* header */
   .header__img-logo {
     width: 183px;
@@ -172,5 +197,285 @@
     width: 247px;
     height: 65px;
     font-size: 22px;
+  }
+
+  /* filter */
+
+  .filter.show-filter-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden auto;
+  }
+
+  .filter__btn-show-filter-mobile {
+    display: block;
+    width: 281px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #666666;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans";
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .show-filter-mobile .filter__btn-show-filter-mobile {
+    display: none;
+  }
+
+  .show-filter-mobile .filter__text-top-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 49px 40px 40px 40px;
+    border-bottom: 1px solid #666666;
+  }
+
+  .filter__title-mobile {
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #666666;
+  }
+
+  .filter__title {
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    /* line-height: 100px; */
+    color: #000000;
+    margin: 0;
+  }
+
+  /* filter color */
+
+  .filter__color {
+    display: none;
+  }
+
+  .show-filter-mobile .filter__color {
+    display: block;
+    margin: 0;
+    padding: 51px 40px 40px 39px;
+  }
+
+  .filter__text-color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 40px; */
+    margin-bottom: 40px;
+  }
+
+  /* .filter__color .filter__title {
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    /* line-height: 100px; */
+  /* color: #000000;
+    margin: 0;
+  } */
+
+  .filter__show-color-filter {
+    display: block;
+  }
+
+  .filter__do-not-show-color-filter {
+    padding: 10px 0;
+  }
+
+  /* .filter__color-group {
+    height: auto;
+    margin: 0 0 0 39px;
+    overflow: visible;
+  } */
+
+  .filter__color-group {
+    display: none;
+  }
+
+  .filter__color-group.show-color-filter-mobile {
+    display: block;
+    height: auto;
+    margin: 0 0 0 39px;
+    overflow: visible;
+  }
+
+  /* .filter__color-group--limit-sample {
+    display: none;
+  } */
+
+  /* .filter__color-group.show-filter-color-mobile {
+    display: block;
+  } */
+
+  .filter__color-item {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  .filter__color-checkbox-custom {
+    width: 30px;
+    height: 30px;
+    margin-right: 22px;
+  }
+
+  .filter__color-checkbox:checked ~ .filter__color-checkbox-custom::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .filter__handle-show-colors {
+    display: none;
+  }
+
+  /* filter size */
+
+  .filter__size {
+    display: none;
+  }
+
+  .show-filter-mobile .filter__size {
+    display: block;
+    margin: 0;
+    padding: 0px 40px 40px 39px;
+  }
+
+  .filter__text-size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .filter__show-size-filter {
+    display: block;
+  }
+
+  .filter__do-not-show-size-filter {
+    padding: 10px 0;
+  }
+
+  .filter__size-group {
+    display: none;
+  }
+
+  .filter__size-group.show-size-filter-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 80px);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    max-width: 440px;
+    margin: 0 0 40px 40px;
+  }
+
+  .filter__size-checkbox-custom {
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+  }
+
+  /* filter price */
+  .filter__price {
+    display: none;
+  }
+
+  .show-filter-mobile .filter__price {
+    display: block;
+    margin: 0;
+    padding: 0px 40px 50px 39px;
+  }
+
+  .filter__text-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .filter__show-price-filter {
+    display: block;
+  }
+
+  .filter__do-not-show-price-filter {
+    padding: 10px 0;
+  }
+
+  .filter__price-group {
+    display: none;
+  }
+
+  .filter__price-group.show-price-filter-mobile {
+    display: block;
+    margin-left: 40px;
+  }
+
+  .filter__price-item {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  .filter__price-checkbox-custom {
+    width: 30px;
+    height: 30px;
+    margin-right: 22px;
+  }
+
+  .filter__price-checkbox:checked ~ .filter__price-checkbox-custom::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* btns bottom center */
+  .filter__btns-bottom-center.show-btns-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  /* btn apply filter */
+
+  .filter__btn-apply-filter {
+    width: 260px;
+    height: 80px;
+    background-color: #00bff3;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #f9f9f9;
+    font-weight: 400;
+    font-family: "Open Sans";
+    border: none;
+  }
+
+  /* btn clean filter */
+
+  .filter__btn-clean-filter {
+    width: 260px;
+    height: 80px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    background: #ffffff;
+    border: 1px solid #666666;
+    color: #666666;
   }
 }

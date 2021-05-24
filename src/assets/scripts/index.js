@@ -1,15 +1,17 @@
 import { get } from "./services/HTTPRequests.js";
 import { stateOrder } from "./components/order.js";
 import { createCards, cleanVitrine } from "./components/card.js";
+import { createFilter, stateFilter } from "./components/filter.js";
 import {
   statePagination,
   setStatePagination,
 } from "./components/pagination.js";
 
-const url = "http://localhost:3004/blusas";
+const url = "http://localhost:3000/blusas";
 
 const initCategoryPage = async (endpoint) => {
   let products = await get(endpoint);
+  createFilter(products);
   setStatePagination({
     totalProducts: products.length,
   });
@@ -22,8 +24,9 @@ const initCategoryPage = async (endpoint) => {
 initCategoryPage(url);
 
 const updateCategoryPage = async () => {
+  const { endpointFilter } = stateFilter;
   const { endpointOrder } = stateOrder;
-  const endpoint = `${url}?${endpointOrder}`;
+  const endpoint = `${url}?${endpointFilter}${endpointOrder}`;
   let products = await get(endpoint);
   setStatePagination({
     setCurrentPage: 1,

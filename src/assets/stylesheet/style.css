@@ -9,6 +9,7 @@
   5) card
   6) order
   7) pagination
+  8) filter
 
 */
 
@@ -266,4 +267,240 @@ ul {
   background-color: #00c0ee;
   cursor: pointer;
   margin: 0 auto;
+}
+
+/* filter */
+
+.filter__btn-show-filter-mobile {
+  display: none;
+}
+
+.filter__text-top-mobile {
+  display: none;
+}
+
+.filter__title {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+/* filter color */
+
+.filter__color {
+  margin-bottom: 48px;
+}
+
+.filter__text-color {
+  margin-bottom: 17px;
+}
+
+/* .filter__color .filter__title {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000000;
+} */
+
+.filter__show-color-filter,
+.filter__do-not-show-color-filter {
+  display: none;
+}
+
+.filter__color-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.filter__color-checkbox {
+  display: none;
+}
+
+.filter__color-checkbox-custom {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin-right: 9px;
+}
+
+.filter__color-checkbox:checked ~ .filter__color-checkbox-custom::after {
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #00c0ee;
+}
+
+.filter__color-group {
+  margin-bottom: 11.5px;
+}
+
+.filter__color-group--limit-sample {
+  height: 120px;
+  overflow: hidden;
+}
+
+.filter__handle-show-colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 120px;
+  border-bottom: 1px solid #666666;
+  cursor: pointer;
+}
+
+.filter__handle-show-colors.open {
+  width: 112px;
+}
+
+.filter__title-show-colors {
+  font-size: 12px;
+  color: #666666;
+  font-weight: 400;
+  font-family: "Open Sans";
+  margin-right: 7px;
+}
+
+.filter__img-arrow {
+  color: #666666;
+}
+
+/* filter size */
+.filter__text-size {
+  margin-bottom: 16px;
+}
+
+/* .filter__title {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000000;
+} */
+
+.filter__size {
+  margin-bottom: 48px;
+}
+
+.filter__show-size-filter,
+.filter__do-not-show-size-filter {
+  display: none;
+}
+
+.filter__size-group {
+  display: grid;
+  max-width: 155px;
+  grid-template-columns: repeat(auto-fit, 32px);
+  grid-column-gap: 9px;
+  grid-row-gap: 8px;
+}
+
+.filter__size-item {
+  cursor: pointer;
+}
+
+.filter__size-checkbox {
+  display: none;
+}
+
+.filter__size-checkbox-custom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.filter__size-checkbox:checked ~ .filter__size-checkbox-custom {
+  border: 1px solid #00c0ee;
+}
+
+/* filter price */
+
+.filter__text-price {
+  margin-bottom: 19px;
+}
+
+/* .filter__title {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000000;
+} */
+
+.filter__show-price-filter,
+.filter__do-not-show-price-filter {
+  display: none;
+}
+
+.filter__price-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__price-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.filter__price-checkbox {
+  display: none;
+}
+
+.filter__price-checkbox-custom {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin-right: 9px;
+}
+
+.filter__price-checkbox:checked ~ .filter__price-checkbox-custom::after {
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #00c0ee;
+}
+
+/* btns bottom center */
+.filter__btns-bottom-center {
+  display: none;
 }
