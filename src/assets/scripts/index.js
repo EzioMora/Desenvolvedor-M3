@@ -33,7 +33,7 @@ const updateCategoryPage = async () => {
     totalProducts: products.length,
   });
   const { endpointPagination } = statePagination;
-  const newEndpoint = `${endpoint}&${endpointPagination}`;
+  const newEndpoint = `${endpoint}${endpointPagination}`;
   products = await get(newEndpoint);
   cleanVitrine();
   createCards(products);
